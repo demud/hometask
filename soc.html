@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Соціологічне опитування</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Повернутись</a><br>
+        <a href="soc.html"><img src="img/soc.png" alt="Соціологічне опитування" title="Соціологічне опитування"></a>
+    </header>
+    <main>
+        <p>Дайте відповіді на запитання:</p>
+        <form method="POST" action="https://formspree.io/demudt@gmail.com">
+            <label for="client-name">Ім'я:</label>
+            <input type="text" id="client-name" placeholder="Ім'я" name="client-name" required>
+            <br>
+            <label>Прізвище:
+            <input type="text" placeholder="Прізвище" name="client-surname" required>
+            </label>
+            <br>
+            <label>Електронна адреса:
+            <input type="email" placeholder="Електронна адреса"
+             name="client-email" required>
+             <br>
+             </label>
+             <label>Стать:
+             <input type="radio" name="gender" value="male" required checked>Чоловіча
+             </label>
+             <label>
+             <input type="radio" name="gender" value="female" required>Жіноча
+             </label>
+             <label><input type="radio" name="gender" value="other" required>Інша
+             </label>
+
+             <br>
+             <input type="submit" value="Надіслати">
+             <input type="reset" value="Скидання">
+             
+        </form>
+    </main>
+
+</body>
+
+</html>
