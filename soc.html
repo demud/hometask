@@ -28,22 +28,55 @@
              name="client-email" required>
              <br>
              </label>
-             <label>Стать:
+            <label>Стать:
              <input type="radio" name="gender" value="male" required checked>Чоловіча
              </label>
-             <label>
+            <label>
              <input type="radio" name="gender" value="female" required>Жіноча
              </label>
-             <label><input type="radio" name="gender" value="other" required>Інша
+            <label><input type="radio" name="gender" value="other" required>Інша
              </label>
+            <br>
+            <label>Номер телефону:
+                 <!--Нижче помилка-->
+             <input type="tel" placeholder="Номер телефону" name="client-tel" pattern="+380-[0-9]{9}" value="+380" required>
+             </label>
+            <br>
+            <label>Які породи собак Вам подабаються:
+            <br>
+            <input type="checkbox" name="q1" value="akita">Акіта
+            </label>
+            <br>
+            <label><input type="checkbox" name="q1" value="bigl">Бігль
+            </label>
+            <br>
+            <label><input type="checkbox" name="q1" value="mastyf">Мастиф
+            </label>
+            <br>
+            <label><input type="checkbox" name="q1" value="mops">Мопс
+            </label>
+            <br>
+            <label><input type="checkbox" name="q1" value="none">Жодна
+            </label>
+            <br>
+            <label>Яка порода собаки подобається Вам найбільше:<br>
+            <select id="simple" name="q2">
+              <option>Жодна</option>
+              <option>Акіта</option>
+              <option>Бігль</option>
+              <option>Мастиф</option>
+              <option>Мопс</option>
+            </select>
+            </label>
+            <br>
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Скидання">
 
-             <br>
-             <input type="submit" value="Надіслати">
-             <input type="reset" value="Скидання">
-             
         </form>
     </main>
-
+    <footer>
+        <p>2018р. Всі права захищено<br>При використанні матеріалів з сайту посилання на <a href="https://hometask-demud.c9users.io/index.html" title="https://hometask-demud.c9users.io/index.html">Світ собак</a> обов'язкове.</p>
+    </footer>
 </body>
 
 </html>
